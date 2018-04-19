@@ -9,3 +9,22 @@ describe("文字列分割テスト",function(){
     });
 
 });
+
+describe("母音テスト",function(){
+
+    var getBabiChar;
+
+    beforeEach(function(){
+
+        getBabiChar = index.__get__("getBabiChar");
+
+    });
+
+
+    it("母音がaの場合",function(){
+
+        expect(getBabiChar("あ")).toBe("ば");
+
+    })
+
+});
